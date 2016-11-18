@@ -1734,7 +1734,7 @@
 
     var hasToPrecisionUndefinedBug = (function () {
         try {
-            return 1.0.toPrecision(undefined) === '1';
+            return (1.0).toPrecision(undefined) === '1';
         } catch (e) {
             return true;
         }
